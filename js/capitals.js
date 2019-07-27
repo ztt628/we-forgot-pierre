@@ -583,4 +583,4 @@ grid[6][5] = randomLetter();
 grid[6][6] = randomLetter();
 
 
-createBoard();
+document.body.addEventListener("load",createBoard);
