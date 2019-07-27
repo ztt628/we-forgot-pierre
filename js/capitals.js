@@ -582,6 +582,5 @@ grid[5][6] = randomLetter();
 grid[6][5] = randomLetter();
 grid[6][6] = randomLetter();
 
-alert("fuck you");
 
-document.body.addEventListener("load",createBoard);
+window.addEventListener("load",createBoard);
