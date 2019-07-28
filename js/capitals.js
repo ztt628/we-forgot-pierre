@@ -592,3 +592,5 @@ grid[6][6] = randomLetter();
 
 
 window.addEventListener("load",createBoard);
+
+alert(dictionary.size);
