@@ -351,7 +351,7 @@ function commit(){
 		return;
 	}
 	/* TODO: shaking animation */
-	if(!dictionary.has(getWord())){
+	if(!dictionary.has(getWordLower())){
 		return;
 	}
 	let capitalCaptured = false;
@@ -592,7 +592,3 @@ grid[6][6] = randomLetter();
 
 
 window.addEventListener("load",createBoard);
-
-let iter = dictionary.keys();
-alert(iter.next().value);
-alert(dictionary.has("sin"));
