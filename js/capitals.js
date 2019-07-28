@@ -506,7 +506,7 @@ function willNotCapture(code){
 }
 
 function getWord(){
-	return getWordLower.toUpperCase();
+	return getWordLower().toUpperCase();
 }
 
 function getWordLower(){
