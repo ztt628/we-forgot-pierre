@@ -593,4 +593,6 @@ grid[6][6] = randomLetter();
 
 window.addEventListener("load",createBoard);
 
-alert(dictionary.size);
+let iter = dictionary.keys();
+alert(iter.next().value);
+alert(dictionary.has("sin"));
