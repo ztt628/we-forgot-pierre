@@ -350,6 +350,10 @@ function commit(){
 	if(codes.length === 0){
 		return;
 	}
+	/* TODO: shaking animation */
+	if(!dictionary.has(getWord())){
+		return;
+	}
 	let capitalCaptured = false;
 	let foundEnemyCapital = false;
 	let stillAlive = false;
@@ -502,11 +506,15 @@ function willNotCapture(code){
 }
 
 function getWord(){
+	return getWordLower.toUpperCase();
+}
+
+function getWordLower(){
 	let word = "";
 	for(let j = 0; !(j>=codes.length); j++){
 		word += grid[X(codes[j])][Y(codes[j])];
 	}
-	return word.toUpperCase();
+	return word;
 }
 
 function addLetter(code){
